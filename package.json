@@ -1,0 +1,35 @@
+{
+  "name": "@topcli/ansi-segmenter",
+  "version": "1.0.0",
+  "description": "An extension of Intl.Segmenter that support ANSI codes with zero dependencies",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test-only": "glob -c \"tsx --test\" \"./test/**/*.spec.ts\"",
+    "test": "npm run lint && npm run coverage",
+    "coverage": "c8 -r html npm run test-only",
+    "lint": "eslint src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TopCli/AnsiSegmenter.git"
+  },
+  "keywords": [],
+  "author": "GENTILHOMME Thomas <gentilhomme.thomas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TopCli/AnsiSegmenter/issues"
+  },
+  "homepage": "https://github.com/TopCli/AnsiSegmenter#readme",
+  "devDependencies": {
+    "@openally/config.eslint": "^2.1.0",
+    "@openally/config.typescript": "^1.0.3",
+    "@types/node": "^22.15.3",
+    "c8": "^10.1.3",
+    "glob": "^11.0.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
