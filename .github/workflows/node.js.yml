@@ -46,6 +46,11 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@0634a2670c59f64b4a01f0f96f84700a4088b9f0 # v2.12.0
+        with:
+          egress-policy: audit
+
       - name: Merge Dependabot PR
         uses: fastify/github-action-merge-dependabot@e820d631adb1d8ab16c3b93e5afe713450884a4a # v3.11.1
         with:
