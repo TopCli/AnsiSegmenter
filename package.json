@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/TopCli/AnsiSegmenter.git"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "GENTILHOMME Thomas <gentilhomme.thomas@gmail.com>",
   "license": "MIT",
