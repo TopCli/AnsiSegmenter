@@ -1,6 +1,12 @@
 # AnsiSegmenter
 An extension of [Intl.Segmenter](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter) that supports ANSI escape codes – with zero dependencies.
 
+![version](https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&url=https://raw.githubusercontent.com/TopCli/AnsiSegmenter/main/package.json&query=$.version&label=Version)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/TopCli/AnsiSegmenter/commit-activity)
+[![MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://github.com/TopCli/AnsiSegmenter/blob/main/LICENSE)
+[![scorecard](https://api.securityscorecards.dev/projects/github.com/TopCli/AnsiSegmenter/badge?style=for-the-badge)](https://ossf.github.io/scorecard-visualizer/#/projects/github.com/TopCli/AnsiSegmenter)
+![build](https://img.shields.io/github/actions/workflow/status/TopCli/AnsiSegmenter/node.js.yml?style=for-the-badge)
+
 ## Requirements
 - [Node.js](https://nodejs.org/en/) v22 or higher
 
