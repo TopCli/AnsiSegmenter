@@ -45,7 +45,10 @@ export function extractAnsiFromTextSegment(
   };
 }
 
-function ansiRegex({ onlyFirst = false } = {}) {
+/**
+ * @note code copy-pasted from https://github.com/chalk/ansi-regex#readme
+ */
+function ansiRegex() {
   // Valid string terminator sequences are BEL, ESC\, and 0x9c
   const ST = "(?:\\u0007|\\u001B\\u005C|\\u009C)";
   const pattern = [
@@ -53,5 +56,5 @@ function ansiRegex({ onlyFirst = false } = {}) {
     "(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-nq-uy=><~]))"
   ].join("|");
 
-  return new RegExp(pattern, onlyFirst ? undefined : "g");
+  return new RegExp(pattern, "g");
 }

@@ -13,6 +13,17 @@ const kCLIColor = {
 } as const satisfies Record<string, (text: string) => string>;
 
 describe("AnsiSegmenter", () => {
+  describe("resolvedOptions", () => {
+    const segmenter = new AnsiSegmenter("en-US", {
+      granularity: "word"
+    });
+
+    assert.deepEqual(
+      segmenter.resolvedOptions(),
+      { locale: "en-US", granularity: "word" }
+    );
+  });
+
   describe("no ANSI characters", () => {
     it("should segment the provided string using 'grapheme' granularity (default)", () => {
       const segmenter = new AnsiSegmenter("en-US");
