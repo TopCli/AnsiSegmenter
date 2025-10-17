@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { styleText } from "node:util";
 
 // Import Internal Dependencies
-import { AnsiSegmenter } from "../src/index.js";
+import { AnsiSegmenter } from "../src/index.ts";
 
 // CONSTANTS
 const kCLIColor = {

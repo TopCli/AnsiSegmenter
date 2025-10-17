@@ -1,7 +1,7 @@
-export * from "./AnsiSegmenter.class.js";
-export * from "./AnsiSegment.class.js";
+export * from "./AnsiSegmenter.class.ts";
+export * from "./AnsiSegment.class.ts";
 export {
   type AnsiCode,
   type ParsedAnsiSegment,
   extractAnsiFromTextSegment
-} from "./extractAnsiFromTextSegment.js";
+} from "./extractAnsiFromTextSegment.ts";
