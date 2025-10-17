@@ -1,8 +1,8 @@
 // Import Internal Dependencies
 import {
   extractAnsiFromTextSegment
-} from "./extractAnsiFromTextSegment.js";
-import { AnsiSegment } from "./AnsiSegment.class.js";
+} from "./extractAnsiFromTextSegment.ts";
+import { AnsiSegment } from "./AnsiSegment.class.ts";
 
 export class AnsiSegmenter {
   public baseSegmenter: Intl.Segmenter;

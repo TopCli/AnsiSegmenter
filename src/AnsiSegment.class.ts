@@ -1,7 +1,7 @@
 // Import Internal Dependencies
 import type {
   AnsiCode
-} from "./extractAnsiFromTextSegment.js";
+} from "./extractAnsiFromTextSegment.ts";
 
 export class AnsiSegment {
   public codes: AnsiCode[] = [];
