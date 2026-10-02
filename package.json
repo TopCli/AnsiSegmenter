@@ -32,10 +32,10 @@
   },
   "homepage": "https://github.com/TopCli/AnsiSegmenter#readme",
   "devDependencies": {
-    "@openally/config.eslint": "^2.1.0",
+    "@openally/config.eslint": "^3.0.2",
     "@openally/config.typescript": "^1.2.1",
     "@types/node": "^26.0.1",
-    "c8": "^11.0.0",
-    "typescript": "^6.0.2"
+    "c8": "^12.0.0",
+    "typescript": "^7.0.2"
   }
 }
